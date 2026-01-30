@@ -1,0 +1,21 @@
+{
+  "name": "stg-game",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build && node generate-sw.js",
+    "preview": "vite preview",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "dependencies": {
+    "phaser": "^3.80.0"
+  }
+}
